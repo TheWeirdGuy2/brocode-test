@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroCode - Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Material+Icons&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="chat-container">
+        <!-- Login screen -->
+        <div id="login-container">
+            <h1>Welcome to TheBroCode</h1>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <button id="start-chat" class="btn">Start Chat</button>
+        </div>
+
+        <!-- Chatbox screen -->
+        <div id="chat-box" style="display:none;">
+            <div id="chat-header">
+                <span>Chat with friends</span>
+                <button id="logout" class="btn">Logout</button>
+            </div>
+
+            <div id="chat-area">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <div id="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type a message..." />
+                <button id="send-message" class="btn">Send</button>
+                <button id="gallery-icon" class="btn">📷</button> <!-- Gallery icon -->
+                <input type="file" id="file-input" accept="image/*, .pdf, .txt, .docx" style="display: none;" />
+                
+                <!-- Add a button for the creator to clear the entire chat history -->
+                <button id="clear-all-chat" class="btn" style="display: none;">Clear All Chats</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
