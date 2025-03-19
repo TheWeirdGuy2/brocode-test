@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://brocode-websocket-server.onrender.com/"); // ✅ Updated WebSocket URL
+const socket = new WebSocket("wss://brocode-test.onrender.com/"); // ✅ Updated WebSocket URL
 
 const startChatButton = document.getElementById("start-chat");
 const usernameInput = document.getElementById("username");
